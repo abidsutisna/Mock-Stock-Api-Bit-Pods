@@ -58,6 +58,8 @@ public class MainController {
         int close = random.nextInt(51) + 50; // Random close value between 50 and 100
         int change = random.nextInt(6); // Random change value between 0 and 5
         int percent = random.nextInt(6); // Random percent value between 0 and 5
+        // randomize volume
+        int volume = random.nextInt(1000000) + 1000000;
 
         Company company = new Company();
         company.setName(companyName);
@@ -69,6 +71,7 @@ public class MainController {
         stock.setClose(close);
         stock.setChange(change);
         stock.setPercent(percent);
+        stock.setVolume(volume);
 
         return stock;
     }
