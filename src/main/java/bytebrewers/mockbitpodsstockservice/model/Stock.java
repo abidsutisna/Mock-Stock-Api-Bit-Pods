@@ -11,4 +11,5 @@ public class Stock {
     private double close;
     private double change;
     private double percent;
+    private int volume;
 }
